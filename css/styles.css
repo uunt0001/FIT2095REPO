@@ -1,0 +1,9 @@
+body {
+    background-color: #00B9FC;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}

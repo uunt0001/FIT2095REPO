@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="/">Homepage</a> <br>
+    <a href="/newEmployee">Add new employee</a>
+
+    <h1>List of potential employees</h1>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Department</th>
+        </tr>
+
+        <% for (let i = 0; i < employeeList.length; i++) { %>
+        <tr>
+            <td><%=i + 1%></td>
+            <td><%= employeeList[i].firstName %></td>
+            <td><%= employeeList[i].lastName %></td>
+            <td><%= employeeList[i].dob %></td>
+            <td><%= employeeList[i].department %></td>
+        </tr>
+        <%}%>
+
+    </table>
+</body>
+
+</html>
